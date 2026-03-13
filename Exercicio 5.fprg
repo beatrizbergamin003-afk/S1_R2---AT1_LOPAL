@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio 5"/>
+        <attribute name="authors" value="1DEVSESI46A"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-13 08:37:24 "/>
+        <attribute name="created" value="MURFVlNFU0k0NkE7RUNGUDUwN0QxMzE5NjA2OzIwMjYtMDMtMTM7IjA4OjA0OjE1ICI7MjgxMw=="/>
+        <attribute name="edited" value="MURFVlNFU0k0NkE7RUNGUDUwN0QxMzE5NjA2OzIwMjYtMDMtMTM7IjA4OjM3OjI0ICI7MjsyOTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notaZ" type="Real" array="False" size=""/>
+            <declare name="notay" type="Real" array="False" size=""/>
+            <declare name="notaX" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual foi sua primeira nota?&quot;" newline="True"/>
+            <input variable="notaX"/>
+            <output expression="&quot;Qual foi sua segunda nota?&quot;" newline="True"/>
+            <input variable="notay"/>
+            <if expression="(notaX+notay)/2&gt;=7">
+                <then>
+                    <output expression="&quot;Voc&#234; foi aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(nota+notay)/2&lt;6">
+                        <then>
+                            <output expression="&quot;Voc&#234; foi reprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Voc&#234; est&#225; de recupera&#231;&#227;o&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
